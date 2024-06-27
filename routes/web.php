@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,3 +44,5 @@ Route::get('/register', function () {
 });
 
 Route::get('/tabel', [PageController::class, 'dataTabel']);
+// Route::get('/siswa', [SiswaController::class, 'index']);
+Route::resource('siswa', SiswaController::class);

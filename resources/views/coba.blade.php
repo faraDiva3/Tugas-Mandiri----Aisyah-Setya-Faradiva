@@ -1,5 +1,5 @@
 @extends('template')
-@section('contoh')
+@section('main')
     <h1>Ini view laravel</h1>
     <?php
         for ($i=1; $i <= 10 ; $i++) { 

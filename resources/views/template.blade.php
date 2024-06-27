@@ -363,9 +363,10 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid-dark">
+                <div class="container-fluid text-dark">
+                    @include('flashmessage')
                     @yield('main')
-                    @yield('contoh')
+                    
 
                 </div>
                 <!-- /.container-fluid -->

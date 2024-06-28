@@ -10,6 +10,7 @@
             <th scope="col">Nis</th>
             <th scope="col">Nama</th>
             <th scope="col">Alamat</th>
+            <th scope="col">Sekolah</th>
             <th scope="col">Action</th>
 
         </tr>
@@ -21,6 +22,7 @@
                 <td>{{$item->nis}}</td>     
                 <td>{{$item->nama}}</td>     
                 <td>{{$item->alamat}}</td> 
+                <td>{{$item->sekolah->nama_sekolah}}</td> 
                 <td>
                     <a href="{{ route('siswa.edit', $item->id) }}" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
                     <form action="{{ route('siswa.destroy', $item->id) }}" method="post" style="display:inline;">

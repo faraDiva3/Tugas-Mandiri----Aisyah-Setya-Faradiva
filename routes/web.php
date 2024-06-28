@@ -46,3 +46,7 @@ Route::get('/register', function () {
 Route::get('/tabel', [PageController::class, 'dataTabel']);
 // Route::get('/siswa', [SiswaController::class, 'index']);
 Route::resource('siswa', SiswaController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
